@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+	
+	<head>
+	
+		<title>GD Creations</title>
+		
+		<meta charset="UTF-8">
+		
+		<meta name="viewport" content="width=device-width , initial-scale = 1.0">
+		
+		<link type="text/css" rel="stylesheet" href="commonCascade.css">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		
+		<link type="text/css" rel="stylesheet" href="Photostry.css">
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<script type = "text/javascript" src = "photostry.js"></script>
+	</head>
+	
+	<body>
+	<nav class="navbar navbar-expand-md navbar-light bg-primary navbar-transaprent">
+			  <a class="navbar-brand" href="Home.html">Navbar</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+				<ul class="navbar-nav mr-auto">
+				  <li class="nav-item">
+					<a class="nav-link" href="Index.html">Home</a>	
+					</li>
+				 
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Gallery
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <a class="dropdown-item" href="Photos.html">Photos</a>
+					  <a class="dropdown-item" href="Milestone.html">Milestone Events</a>
+					</div>
+				  </li>
+				  
+				   <li class="nav-item">
+					<a class="nav-link" href="About.html">About</a>
+				  </li>
+				  
+				   <li class="nav-item">
+					<a class="nav-link" href="Contact.html">Contact</a>
+				  </li>
+				</ul>
+				<a href="https://www.facebook.com/Lx-Art-India-306278340099208/" target="_blank"class="fa fa-facebook"></a>
+				
+				<a href="https://www.instagram.com/sanwalgopal/" target="_blank" class="fa fa-instagram"></a>
+				
+				</nav>
+				<body>
+				<div id="event">Events</div><div id="horizontalrule"></div>
+		<div id="imageContainer">
+			<a href="#"><img src = "photos/galleryMedia/nothernLights.jpg" id="myImage"></a>
+			<div class="overlay">
+			<! below description shoiuld not be below 20 words.>
+			<div id="descriptionImage"> Hello World!<br>Click it to see further images of the event</div>
+			</div>
+		</div>
+		<div id="myModal">
+			<div>
+				<img id="imageDisplay">
+				<video id="videoPlay" poster="photos/galleryMedia/thumbnail.jpg" controls src="photos/galleryMedia/samplevideo.mp4" type="video/mp4">
+				
+				</video>
+			</div>
+			<div id="close">&times;</div>
+			<div id="eventGallery">
+				<img class="gallery active" id="001"src="photos/galleryMedia/nothernLights.jpg">
+				<img class="gallery" id="002"src="photos/galleryMedia/About-background-image001.jpg">
+				<img class="gallery" id="003" src="photos/galleryMedia/nothernLights.jpg">		
+				<img class="gallery" id="004" src="photos/galleryMedia/About-background-image001.jpg">	
+				<img class="gallery" id="005" src="photos/galleryMedia/thumbnail.jpg">
+ 				
+			</div>
+
+		</div>
+		<div class = "containers">
+		
+		</div>
+		<div class = "containers">
+		
+		</div>
+		<div class = "containers">
+		
+		</div>
+		<div class = "containers">
+		
+		</div>
+					
+			
+		<script type="text/javascript">
+		
+		document.getElementById("imageContainer").onclick=function(){
+				
+				document.getElementById("myModal").style.display = "block";
+				document.getElementById("imageDisplay").src = document.getElementById("myImage").src;
+			
+			
+			}	
+		document.getElementById("close").onclick = function(){	
+			document.getElementById("myModal").style.display = "none";
+			document.getElementById("videoPlay").pause();
+		}
+		document.getElementById("001").onclick = function(){
+			(this).classList.add("active");
+			document.getElementById("imageDisplay").src = document.getElementById("001").src;
+			document.getElementById("002").classList.remove("active");
+			document.getElementById("003").classList.remove("active");
+			document.getElementById("004").classList.remove("active");
+			document.getElementById("005").classList.remove("active");
+			document.getElementById("videoPlay").style.display = "none";
+			document.getElementById("imageDisplay").style.display = "block";
+		
+		}
+		document.getElementById("002").onclick = function(){
+			(this).classList.add("active");
+			document.getElementById("001").classList.remove("active");
+			document.getElementById("003").classList.remove("active");
+			document.getElementById("004").classList.remove("active");
+			document.getElementById("imageDisplay").src = document.getElementById("002").src;
+			document.getElementById("005").classList.remove("active");
+			document.getElementById("videoPlay").style.display = "none";
+			document.getElementById("imageDisplay").style.display = "block";
+		}
+		document.getElementById("003").onclick = function(){
+			(this).classList.add("active");
+			document.getElementById("002").classList.remove("active");
+			document.getElementById("001").classList.remove("active");
+			document.getElementById("004").classList.remove("active");
+			document.getElementById("imageDisplay").src = document.getElementById("003").src;
+			document.getElementById("005").classList.remove("active");
+			document.getElementById("videoPlay").style.display = "none";
+			document.getElementById("imageDisplay").style.display = "block";
+		}
+		document.getElementById("004").onclick = function(){
+			(this).classList.add("active");
+			document.getElementById("002").classList.remove("active");
+			document.getElementById("003").classList.remove("active");
+			document.getElementById("001").classList.remove("active");
+			document.getElementById("imageDisplay").src = document.getElementById("004").src;
+			document.getElementById("005").classList.remove("active");
+			document.getElementById("videoPlay").style.display = "none";
+			document.getElementById("imageDisplay").style.display = "block";
+		}
+		document.getElementById("005").onclick = function(){
+			(this).classList.add("active");
+			document.getElementById("videoPlay").style.display = "block";
+			document.getElementById("002").classList.remove("active");
+			document.getElementById("003").classList.remove("active");
+			document.getElementById("001").classList.remove("active");
+			document.getElementById("004").classList.remove("active");
+			document.getElementById("imageDisplay").style.display = "none";
+						
+		}
+		 
+		
+		</script>
+
+				
+
+	
+		
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		
+		
+		<script type="text/javascript" src="gopaldutt.js"></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		
+	</body>
+
+</html>

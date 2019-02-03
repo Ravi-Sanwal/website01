@@ -1,0 +1,283 @@
+.mySlides {display: none}
+img {vertical-align: middle;
+	 
+}
+
+.slideshow-container {
+  position: relative;
+  top:56px;
+  margin: auto;
+  background-color:black;
+  
+}
+.text {
+  color: #000000;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 40%;
+  left:35%;
+  background-color:white;
+  opacity:0.80;
+  width:400px;
+  font-weight:bold;
+  text-align: center;
+  border-radius:10px;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-fill-mode:forwards;
+}
+
+@-webkit-keyframes fade{
+  from{right:-300px;opacity:0} 
+  to{right:0;opacity:1}
+}
+
+@keyframes fade {
+  from{right:-300px;opacity:0} 
+  to{right:0;opacity:1}
+}
+ .navbar-default .navbar-nav>li>a:focus { 
+ color: #000000; 
+ }
+ .navbar-default .navbar-brand:focus { 
+ color: #000000; 
+ }
+.navbar-transparent{
+	background:none !important;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    position: relative;
+    margin: 0.5em;
+    padding: 0.5em 2em 0.5em 3em;
+}
+blockquote:before {
+    font-family: Georgia, serif;
+    position: absolute;
+    font-size: 6em;
+    line-height: 1;
+    top: 0;
+    left: 0;
+    content: "\201C";
+}
+
+blockquote footer {
+    padding: 0 2em 0 0;
+    text-align:right;
+}
+#clientContainer{
+	width:88%;
+	height:280px;
+	position:relative;
+	top:65px;
+
+}
+#clients{
+	position:relative;
+	top:10px;
+	left:140px;
+	
+}
+.Heading{
+	font-size:50px;
+	font-style:italic;
+	color:#007BFF;
+	font-family:"Bradley hand";
+	letter-spacing:2px;
+}
+.rule{
+	width:125px;
+	height:2.5px;
+	background-color:#007BFF;
+}
+#clientsHead{
+	position:relative;
+	left:150px;
+}
+.dot{
+	width:4px;
+	height:4px;
+	border-radius:50%;
+	background-color:#007BFF;
+}
+.last1{
+	position:relative;
+	bottom:3px;
+	left:279px;
+}
+.first1{
+	position:relative;
+	left:143px;
+	top:3px;
+}
+
+#clientDisplay{
+	width:65%;
+	height:140px;
+	position:relative;
+	top:40px;
+	margin:auto;
+}
+.clients{
+	width:120px;
+	height:120px;
+	border-radius:50%;
+	float:left;
+	margin:10px 15px;
+	position:relative;
+	left:8%;
+	background-color:black;
+}
+#more{
+	width:120px;
+	height:120px;
+	border-radius:50%;
+	float:left;
+	margin:10px 15px;
+	position:relative;
+	bottom:100px;
+	left:85%;
+	background-color:#007BFF;
+	text-align:center;
+	cursor:pointer;
+	color:white;
+}
+#data{
+	font-size:20px;
+	position:relative;
+	top:25%;
+}
+#wrapper{
+	width:1100px;
+	height:320px;
+	margin:auto;
+	background-color:#d6d4d4;
+	position:relative;
+	top:80px;
+	border-radius:10px;
+}
+#recent{
+	position:relative;
+	left:30px;
+	bottom:10px;
+}
+.first2{
+	position:relative;
+	left:22px;
+	bottom:7px;
+}
+.last2{
+	position:relative;
+	left:160px;
+	bottom:13px;
+	
+}
+#recentSlideshow{
+	background-color:white;
+	width:1080px;
+	height:310px;
+	margin: 5px 10px 10px 10px;	
+	
+}
+.recentImages{
+	width:300px;
+	height:300px;
+	float:left;
+	margin:10px;
+}
+.recentImages img{
+	width:100%;
+	height:100%;
+	position:relative;
+	left:59px;
+}
+.animateRight{
+	-webkit-animation-name:animateright;
+	-webkit-animation-duration: 2s;
+	animation-name:animateright;
+	animation-duration:4s;
+}
+@keyfames animateright{
+	from{right:-300px;opacity:0}
+	to{right:0;opacity:1}
+}
+#prev, #next {
+  cursor: pointer;
+  position:absolute;
+  top: 65%;
+  width: auto;
+  padding: 10px 16px 16px 16px;
+  opacity:1;
+  font-weight: bold;
+  font-size: 45px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+#next {
+  right: 10px;
+  border-radius: 3px 0 0 3px;
+  background-color: black;
+  color:#007BFF;
+}
+#prev{
+	background-color: white;
+	color:#D6D4D4;
+}
+
+#prev:hover, #next:hover {
+  background-color: rgba(109, 109, 114,0.8) ;
+}
+
+@media only screen and (max-width :1100px){
+	 .text{
+	font-size:16px;
+	width:350px;
+	}
+.slideShowImages{
+	height:550px;
+}
+}
+@media only screen and (max-width :800px){
+	.text{
+	font-size:12px;
+	width:250px;
+	position: absolute;
+  	top: 35%;
+  	left:30%;
+	}
+	.slideShowImages{
+	height:500px;
+}
+}
+@media only screen and (max-width :600px){
+	.text{
+	font-size:8px;
+	width:150px;
+	position: absolute;
+  	top: 20%;
+  	left:30%;
+	}
+	.slideShowImages{
+	height:350px;
+}
+}
+@media only screen and (max-width :400px){
+	.text{
+	font-size:6px;
+	width:150px;
+	position: absolute;
+  	top: 15%;
+  	left:30%;
+	}
+	.slideShowImages{
+	height:300px;
+}
+}
